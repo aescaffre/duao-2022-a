@@ -1,0 +1,85 @@
+%                                                                 aa.dem
+% AA vers. 9.1, LaTeX class for Astronomy & Astrophysics
+% demonstration file
+%                                                       (c) EDP Sciences
+\documentclass[a4paper]{report}
+
+\usepackage{graphicx}
+\usepackage{txfonts}
+\providecommand{\teff}{\ensuremath{T_{\rm eff}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[options]{hyperref}
+% To add links in your PDF file, use the package "hyperref"
+% with options according to your LaTeX or PDFLaTeX drivers.
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\title{Travaux Dirigés DUAO 2022 session 1}
+
+
+\author{A. Escaffre
+          }
+  
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Write your text here
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage 
+
+\chapter{Introduction}
+
+Haute-Vienne, Aveyron, Perche, Rila Mountain , all magick palces where the nights are never nights, where the human is never alone, filled by the trusts of thousands of stars that immunate the cold and the warm nights throughout the year.
+ 
+
+\chapter{Tutorials}
+
+\section{Camera and Noise}
+
+\subsection{Dark, Flat, Bias}
+From the statistically random departure of the photon from the emitting source to its capture as digital information, the signal actually goes trough a series of disturbance, making the art of observation more challenging than what we would want it to be. A particular set of disturbances are the ones induced by the detector, very often a CCD, or a CMOS. Hence before processing any scientific observation data, a calibration must be achieved in order to remove the noise induced by the detector. In observational astronomy, calibration typically involves three parameters: \emph{Bias, Dark, Flat} and consists in doing some sort of signal substraction with various capture frames. 
+
+\textbf{Bias} frames captures dark fixed-pattern noise resulting from variations in manufacturing that affects all detectors to some degree: the sole operation of "reading" the sensors will make the detector generate a signal that will be present in all captures made with the detector. To produce a bias frame, one does a capture with no light falling on the sensor, using the shortest exposure time one can manage with the detector.
+
+\textbf{Dark} frames captures the noisy part of the signal that results from electrons emitted because of the entropy of the system, hence depending on the temperature of the detector.To measure it, we do a capture closing the detector(hence the "dark" name). It is important to have a measure that is as long as the scientific measure, since the quantity of electrons emitted will be an increasing variable of the time. A way to lower the dark noise is to cool the detector.
+Note that capturing the dark also captures the bias, hence if a dark frame is substracted to the scientific capture frame, then the bias should not be substracted as well, so as to avoid removing it twice.
+
+
+\textbf{Flat-field frames} captures variations on the way of the signal. Flat comes from "flat field", because once a detector has been appropriately flat-fielded, a uniform signal will create a uniform output, which is our goal. The flat frame allows for standardizing across the variation of response from each pixel of the camera, which is due to imperfections in the making of the hardware, as well as static disturbance on the path of the signal (dust, optic imperfection). To do a flat, we will try to capture a uniform source of light. It can be the sky before sunset for instance.
+
+
+For all those frames, it is preferable to measure them many time and then average the result, in order to remove the reading noise. 
+
+
+
+\section{Photometry}
+Photometry: Number of photons by unit of time in a given spectral band
+
+
+\subsection{Asteroids}
+
+\subsection{Exoplanets}
+
+\subsection{Variable stars}
+\subsubsection{Eclipsing binary star}
+\subsubsection{$\delta$ Scuti and SX Phoenicis}
+
+\subsection{Clusters}
+\subsubsection{Pleaides and M67 age determination with Gaia DR2}
+\subsubsection{Cluster age determination using C2PU data}
+\subsection{Galaxies}
+
+\section{Spectroscopy}
+Spectroscopy: Photons repartition as a function of their energy (wave length).
+\section{Statistical detection}
+\chapter{Personal project}
+
+
+Blah blah 
+
+\end{document}
+
+
